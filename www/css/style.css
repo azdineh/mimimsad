@@ -1,1 +1,36 @@
 /* Empty. Add your own CSS if you like */
+
+@font-face{
+    font-family: mmsFont;
+    src : url("../font/kacstPen.ttf");
+}
+@font-face{
+    font-family: mmsScreen;
+    src : url("../font/kacstscreen.ttf");
+}
+ion-content{
+color: #f1f1f1;
+font-size: 14pt;
+font-family: mmsFont;
+background-color: #0f1120 !important;
+}    
+#mms-main-container{
+margin: auto;
+height: inherit;
+max-width: 500px;
+/*border: 1px darkkhaki dashed;*/
+}
+.mms-for-start{
+    width: inherit;
+    padding-top: 10px;
+}
+.mms-for-start div{
+   /* border: 1px red dashed;*/
+    text-align: right;
+    margin-bottom: 4px;
+    padding-right: 20%;
+}
+
+.mms-text-second{
+    color: #a5a5a5;
+}
