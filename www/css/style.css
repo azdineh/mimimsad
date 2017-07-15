@@ -13,12 +13,18 @@ color: #f1f1f1;
 font-size: 14pt;
 font-family: mmsFont;
 background-color: #0f1120 !important;
-}    
-#mms-main-container{
+
+}
+
+
+.mms-main-container{
 margin: auto;
-height: inherit;
 max-width: 500px;
 /*border: 1px darkkhaki dashed;*/
+}
+
+.mms{
+padding-right: 20px;
 }
 .mms-for-start{
     width: inherit;
@@ -33,4 +39,40 @@ max-width: 500px;
 
 .mms-text-second{
     color: #a5a5a5;
+}
+
+.mms-header{
+    width: inherit;
+    background-color:rgba(100,100,100,0.09);
+    color: white;;
+    font-size: 1.6em;
+    text-align: right;
+    padding: 14px;
+    padding-right: 10px; 
+    margin-bottom: 1px;
+    border-bottom: 1px solid white;
+}
+
+.mms-header2{
+    border-bottom: none;
+    padding: 8px;
+    padding-right: 30px;
+}
+
+.mms-menu-item-atcive{
+background-color:rgba(100,100,100,0.27);
+}
+
+.mms-barr-opac{
+    height: 60px;
+    position: relative;
+    top:-58px;
+
+background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%, rgba(20,20,33,1) 100%);
+background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(20,20,33,1) 100%);
+background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(20,20,33,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#141421',GradientType=0 );
+
+
+
 }

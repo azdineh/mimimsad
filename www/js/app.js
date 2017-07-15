@@ -59,7 +59,7 @@ angular.module('starter', ['ionic', 'azdineh.apps.controllers','azdineh.apps.ser
       }
     }
   })
-  .state('tab.main.menu', {
+  .state('tab.main-menu', {
     url: '/main/menu',
     views: {
       'tab-main': {

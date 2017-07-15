@@ -90,7 +90,7 @@ a.servicesEnabled=[];a.setServiceEnabled=function(b,c){a.servicesEnabled[b]=c};a
 
 angular.module('azdineh.apps.services', [])
 
-  .factory('Mimsad', function () {
+  .factory('Mimimsad', function () {
     // Might use a resource here that returns a JSON array
     // Mimsad : morafeeq_sawouti
     var isPlaying=false;
