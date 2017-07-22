@@ -5,7 +5,7 @@
 // the 2nd parameter is an array of 'requires'
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'azdineh.apps.controllers','azdineh.apps.services'])
+angular.module('starter', ['ionic', 'ngCordova','azdineh.apps.controllers','azdineh.apps.services'])
 
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
@@ -65,6 +65,15 @@ angular.module('starter', ['ionic', 'azdineh.apps.controllers','azdineh.apps.ser
       'tab-main': {
         templateUrl: 'templates/tab-main-menu.html',
         controller: 'MenuCtrl'
+      }
+    }
+  })
+  .state('tab.main-menu-time', {
+    url: '/main/menu/time',
+    views: {
+      'tab-main': {
+        templateUrl: 'templates/tab-main-menu-time.html',
+        controller: 'TimeCtrl'
       }
     }
   })

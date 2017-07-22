@@ -12,10 +12,10 @@ ion-content{
 color: #f1f1f1;
 font-size: 14pt;
 font-family: mmsFont;
-background-color: #0f1120 !important;
-
+/*background-color: #0f1120 !important;*/
+background-color: #0f1120;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 4 4'%3E%3Cpath fill='%2306070d' fill-opacity='0.24' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
-
 
 .mms-main-container{
 margin: auto;
@@ -33,8 +33,8 @@ padding-right: 20px;
 .mms-for-start div{
    /* border: 1px red dashed;*/
     text-align: right;
-    margin-bottom: 4px;
-    padding-right: 20%;
+    margin-bottom: 1.6vh;
+    padding-right: 14%;
 }
 
 .mms-text-second{
@@ -73,6 +73,32 @@ background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(20,20,33,1
 background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(20,20,33,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#141421',GradientType=0 );
 
+}
 
+.mms-pan-helper{
+    position: fixed;
+    background-color:darkslategrey;
+    width: 100%;
+    height: 100%;
+    z-index: 50000;
+    opacity: 0.005;
+}
 
+.mms-positive{
+    color: darkorange
+}
+
+#mms-first-command{
+    color: #a5a5a5;
+    animation-name: anim-cmd;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes anim-cmd{
+    0% { color: #a5a5a5;}
+    25% { color: #a5a5a5;}
+    50% { color: #a5a566;}
+    75% { color: #a5a140;}
+   100% { color: #a5a5a5;}
 }
