@@ -1,5 +1,5 @@
 angular.module('azdineh.apps.controllers')
-    .controller('MainCtrl', function ($scope, $rootScope, $http, Mimimsad,Monset) {
+    .controller('MainCtrl', function ($scope, $rootScope, $http, Mimimsad, Monset, $sce) {
 
         ionic.Platform.ready(function () {
             //$rootScope.isOnline
@@ -7,6 +7,8 @@ angular.module('azdineh.apps.controllers')
             $scope.commands = [];
             $rootScope.micStyle = "mms-text-second";
             $rootScope.frobotspeakStyle = "";
+            $rootScope.video_id="OPf0YbXqDm0";
+            
 
             // listen for Online event
             /*            $rootScope.$on('$cordovaNetwork:online', function (event, networkState) {

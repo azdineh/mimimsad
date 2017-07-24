@@ -77,6 +77,15 @@ angular.module('starter', ['ionic', 'ngCordova','azdineh.apps.controllers','azdi
       }
     }
   })
+  .state('tab.main-menu-book', {
+    url: '/main/menu/book',
+    views: {
+      'tab-main': {
+        templateUrl: 'templates/tab-main-menu-book.html',
+        controller: 'BookCtrl'
+      }
+    }
+  })
 
   // .state('tab.chats', {
   //     url: '/chats',

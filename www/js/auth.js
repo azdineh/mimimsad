@@ -56,4 +56,3 @@ function loadAPIClientInterfaces() {
     handleAPILoaded();
   });
 }
-auth.js
